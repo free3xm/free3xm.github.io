@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(()=> {
         preloader.style.display = "none";
       }, 1000);
-    },1500
+    },1000
   );
   function hideMenu(){
     if(document.documentElement.clientWidth <= 750){
