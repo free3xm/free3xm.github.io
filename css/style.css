@@ -43,7 +43,7 @@ a {
   opacity: 0; }
 
 .container {
-  display: none;
+  visibility: hidden;
   position: relative;
   width: 100vw;
   height: 100vh;

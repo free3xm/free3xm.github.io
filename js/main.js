@@ -16,15 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
       preloader.classList.add("preloader_none");
       document.querySelector(".container").style.display ="block";
       setTimeout(()=> {
-        preloader.style.display = "none";
+        preloader.style.visibility = "visible";
       }, 1000);
     },1500
   );
-
-  if(document.documentElement.clientWidth <= 750){
-    menu.classList.add("menu_none");
+  function hideMenu(){
+    if(document.documentElement.clientWidth <= 750){
+      menu.classList.add("menu_none");
+    } else   menu.classList.remove("menu_none");
   }
 
+  hideMenu();
+
+  window.addEventListener("resize", () => {
+      hideMenu();
+  });
   gambMenu.addEventListener("click", () => {
     menu.classList.toggle("menu_none");
     gambMenu.classList.toggle("gamb_menu_active");
