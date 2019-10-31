@@ -1,8 +1,10 @@
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".preloader");
-  console.log(preloader);
-  preloader.classList.add("preloader_none");
-  setTimeout(()=> preloader.style.display = "none", 1000);
+  setTimeout(() => {
+      preloader.classList.add("preloader_none");
+      setTimeout(()=> preloader.style.display = "none", 1000);
+    },1500
+  );
 });
 document.addEventListener("DOMContentLoaded", () => {
   const navBtns = document.querySelectorAll(".menu_list li"),
