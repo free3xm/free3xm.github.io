@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
       preloader.classList.add("preloader_none");
-      document.querySelector(".container").style.display ="block";
+      document.querySelector(".container").style.opacity = 1;
       setTimeout(()=> {
-        preloader.style.opacity = 1;
+        preloader.style.display = "none";
       }, 1000);
     },1500
   );
