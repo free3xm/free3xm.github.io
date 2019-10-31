@@ -51,13 +51,13 @@ a {
 
 .bg {
   background: url("../img/mainbg.jpg") no-repeat center/cover;
-  width: 101vw;
+  width: 102%;
   height: 101.5vh;
   position: absolute;
-  top: -10px;
-  right: -10px;
-  left: -10px;
-  bottom: -10px;
+  top: -5px;
+  right: -5px;
+  left: -5px;
+  bottom: -5px;
   display: block; }
 
 .blur {
