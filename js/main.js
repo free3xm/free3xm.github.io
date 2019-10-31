@@ -1,10 +1,5 @@
 window.addEventListener("load", () => {
-  const preloader = document.querySelector(".preloader");
-  setTimeout(() => {
-      preloader.classList.add("preloader_none");
-      setTimeout(()=> preloader.style.display = "none", 1000);
-    },1500
-  );
+
 });
 document.addEventListener("DOMContentLoaded", () => {
   const navBtns = document.querySelectorAll(".menu_list li"),
@@ -14,8 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
         filters = document.querySelectorAll(".filter_item"),
         portfolioItems = document.querySelectorAll('.portfolio_item'),
         gambMenu = document.querySelector(".gamb_menu"),
-        menu = document.querySelector(".menu");
+        menu = document.querySelector(".menu"),
+        preloader = document.querySelector(".preloader");
 
+  setTimeout(() => {
+      preloader.classList.add("preloader_none");
+      setTimeout(()=> preloader.style.display = "none", 1000);
+    },1500
+  );
 
   if(document.documentElement.clientWidth <= 750){
     menu.classList.add("menu_none");
