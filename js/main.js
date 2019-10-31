@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       preloader.classList.add("preloader_none");
       document.querySelector(".container").style.display ="block";
       setTimeout(()=> {
-        preloader.style.visibility = "visible";
+        preloader.style.opacity = 1;
       }, 1000);
     },1500
   );
