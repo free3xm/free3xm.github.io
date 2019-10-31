@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
       preloader.classList.add("preloader_none");
-      setTimeout(()=> preloader.style.display = "none", 1000);
+      setTimeout(()=> {
+        preloader.style.display = "none";
+        document.querySelector(".container").style.display ="block";
+      }, 1000);
     },1500
   );
 

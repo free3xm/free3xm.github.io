@@ -43,6 +43,7 @@ a {
   opacity: 0; }
 
 .container {
+  display: none;
   position: relative;
   width: 100vw;
   height: 100vh;
