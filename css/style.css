@@ -88,9 +88,9 @@ a {
   background: rgba(0, 0, 0, 0.7); }
 
 .menu_none {
-  -webkit-transform: translateX(-20vw);
-  -ms-transform: translateX(-20vw);
-  transform: translateX(-20vw); }
+  -webkit-transform: translateX(-40vw);
+  -ms-transform: translateX(-40vw);
+  transform: translateX(-40vw); }
 
 .menu_list {
   text-align: center;
