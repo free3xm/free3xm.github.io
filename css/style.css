@@ -654,7 +654,9 @@ a {
   backface-visibility: hidden;
   font-size: 15px; }
   .back h3, .back p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 .back_links {
   display: -webkit-box;
